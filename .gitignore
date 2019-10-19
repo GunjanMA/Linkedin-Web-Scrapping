@@ -2,3 +2,4 @@ chromedriver.exe
 _pycache_/
 
 *.exe
+*.xlsx
