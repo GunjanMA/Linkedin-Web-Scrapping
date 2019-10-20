@@ -36,19 +36,13 @@ sheet=workbook.active
 
 
 for r in range(1,len(st)):
-    #for c in range(1,4):
     sheet.cell(row=r,column=1).value=st[r-1]
-        #i=i+1
 
 for r in range(1,len(st)):
-    #for c in range(1,4):
     sheet.cell(row=r,column=2).value=jt[r-1]
-        #i=i+1
 
 for r in range(1,len(st)):
-    #for c in range(1,4):
     sheet.cell(row=r,column=3).value=pt[r-1]
-        #i=i+1
 
 
 workbook.save(path)
@@ -56,34 +50,4 @@ workbook.save(path)
 
 #np=driver.find_element_by_xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "artdeco-button__text", " " ))]')
 #np.click()
-'''
-driver.get('https://www.linkedin.com/search/results/people/?keywords=CTO&origin=SWITCH_SEARCH_VERTICAL&page=2')
 
-sen=Selector(text=driver.page_source)
-sn=sel.xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "actor-name", " " ))]/text()').extract()
-jn=sel.xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "t-black", " " ))]//span/text()').extract()
-
-#len(sn)
-#len(jn)
-
-path="C:/Users/gunjan/Desktop/Web_Scraping/data2.xlsx"
-
-
-workbook=openpyxl.load_workbook(path)
-sheet=workbook.active
-
-#i=0
-for r in range(1,len(sn)):
-    #for c in range(1,4):
-    sheet.cell(row=r,column=1).value=sn[r-1]
-    #i=i+1
-        #i=i+1
-#i=0
-for r in range(1,len(jn)):
-    #for c in range(1,4):
-    sheet.cell(row=r,column=2).value=jn[r-1]
-    #i=i+1
-        #i=i+1
-
-workbook.save(path)
-'''
